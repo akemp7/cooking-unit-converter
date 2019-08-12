@@ -15,6 +15,18 @@
 // } ;
 //
 //
+//inches to cent
+var userLengthImperial = parseInt(prompt("Enter Length in inches"));
+var cm = userLengthImperial * 2.54;
+var lengthConversionImperial = "cm: " + cm.toFixed();
+alert(lengthConversionImperial);
+
+var userLengthMetric = parseInt(prompt("Enter Length in centimeters"));
+var inches = userLengthMetric / 2.54;
+var lengthConversionMetric = "in: " + inches.toFixed();
+alert(lengthConversionMetric);
+
+//Temperature
 var userTempImperial = parseInt(prompt("Enter Farenheit Temperature"));
 var celcius = (userTempImperial - 32) * 5 / 9;
 var tempConversionImperial = "Celcius:" + celcius.toFixed();
